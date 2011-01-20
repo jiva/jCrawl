@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<window class="dialog"
+	title="jCrawl - About"
+	orient="vertical"
+	autostretch="always"
+	onload="sizeToContent()"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<!-- Original template by Jed Brown -->
+
+<groupbox align="center" orient="horizontal">
+<vbox>
+  <text value="jCrawl" style="font-weight: bold; font-size: x-large;"/>
+  <text value="version 0.1"/>
+  <separator class="thin"/>
+  <text value="Created By:" style="font-weight: bold;"/>
+  <text value="Farhan Jiva" class="url"
+        onclick="window.open('http://jiva.ws'); window.close();"/>
+  <separator class="thin"/>
+    <text value="Home Page:" style="font-weight: bold;"/>
+    <text value="http://jiva.ws/"
+          class="url"
+        onclick="window.open('http://jiva.ws/'); window.close();"/>
+  <separator class="thin"/>
+</vbox>
+<spring flex="1"/>
+<image src="chrome://jCrawl/skin/jCrawlb.png"/>
+</groupbox>
+
+  <hbox>
+  <spacer flex="1"/>
+   <button label="Close" oncommand="window.close();"/>
+  </hbox>
+
+</window>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<overlay id="jCrawlOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+// This imports our javascript.
+
+<script type="application/x-javascript" src="chrome://jCrawl/content/jCrawlOverlay.js">
+
+</script>
+
+// This is for the Tools menu.
+
+<menupopup id="menu_ToolsPopup">
+      <menu label="jCrawl">
+        <menupopup>
+          <menuitem label="Start" oncommand="jInit();"/>
+		  <menuseparator/>
+          <menuitem label="Stop" oncommand="jKill();"/>
+        </menupopup>
+      </menu>
+</menupopup>
+
+</overlay>
+
